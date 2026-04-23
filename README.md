@@ -52,7 +52,7 @@ Main UI
 Finished Scan + Address List
 <img width="764" height="746" alt="image" src="https://github.com/user-attachments/assets/346c4eed-29a9-4ad4-83f4-d3a7688e2622" />
 
-# Settings UI
+### Settings UI
 
 General Settings
 <img width="303" height="117" alt="image" src="https://github.com/user-attachments/assets/7e504d23-ce70-4f68-92a7-259aa2fcfe07" />
