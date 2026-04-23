@@ -34,7 +34,7 @@ dnf provides */name-of-file.h
 ### 5. Run it  
 It needs root bc it messes with other program memory:
 ```bash
-sudo ./Lince
+sudo ./LAUGH
 ```
 
 ## Some stuff to know
