@@ -1,42 +1,51 @@
 # Lince
 
-So, I made this simple cheat engine for Linux. It's basically a memory scanner you find a value in a game or program, and you can change it. It's got the classic layout you'd expect: scanner on the right, results on the left, and a list at the bottom to keep track of stuff.
+I made Lince out of boredom. It’s just a basic memory scanner—you find a value in a game or program and change it. Layout’s pretty standard: scanner on the right, results on the left, and a list at the bottom to keep track of things.
 
 ## How to actually get it running
 
-I wrote this inside a Distrobox (Fedora-based), so if you're using that, here's how to get it working.
+I wrote this inside a Fedora Distrobox, so if you're using that, here's how to set it up.
 
-### 1. Create your box
+### 1. Create your box  
 If you haven't created your box yet:
 ```bash
 distrobox create Name-Of-Choice
 ```
-### 2. open your box
+
+### 2. open your box  
 If you haven't opened your box yet:
 ```bash
 distrobox enter Name-Of-Choice
 ```
 
-### 3. Grab the stuff it needs
-You'll need the compiler and the graphics libraries to get the UI working. Just run:
+### 3. Grab the stuff it needs  
+You'll need a compiler and some graphics libraries for the UI:
 ```bash
 sudo dnf install -y make gcc-c++ glfw-devel mesa-libGL-devel libX11-devel libXrandr-devel libXinerama-devel libXcursor-devel libXi-devel
 ```
 
-### 4. Build it
-Just go into the folder where you put all the files and run:
+### 4. Build it  
+Go into the folder where your files are and run:
 ```bash
 make
 ```
 
-### 5. Run it
-Because this thing needs to reach into other programs' memory to change values, you have to run it with root permissions:
+### 5. Run it  
+It needs root since it messes with other programs' memory:
 ```bash
 sudo ./Lince
 ```
 
 ## Some stuff to know
-It's not as polished as the big commercial tools, but it does the job for simple stuff.
-Sudo IS needed so once built run `sudo ./Lince`.
 
-If the build fails and yells at you about a missing file, just try `dnf provides */name-of-file.h` to see what package you're missing.
+It’s not super polished or anything fancy, but it works fine for basic stuff.
+
+You do need sudo to run it:
+```bash
+sudo ./Lince
+```
+
+If the build fails and complains about a missing file, try:
+```bash
+dnf provides */name-of-file.h
+```
