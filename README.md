@@ -46,7 +46,7 @@ You do need sudo to run it
 
 ## UI
 
-# Main UI
+Main UI
 <img width="723" height="743" alt="Screenshot_20260423_123816" src="https://github.com/user-attachments/assets/43a8de0c-2330-4341-a637-45bad685afe8" />
 
 Finished Scan + Address List
