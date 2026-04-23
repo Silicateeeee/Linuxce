@@ -1,4 +1,8 @@
-## How to actually get it running
+# LAUGH
+LAUGH(Linux Adaptation for Universal Game Hacking)
+
+
+### How to actually get it running
 
 This was made in a distrobox so if you're using that here's how to set it up
 
