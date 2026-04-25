@@ -17,6 +17,7 @@ Read memory at a specific address.
   - `4` = float
   - `5` = double
   - `6` = string (up to 64 chars)
+  - `7` = AOB (array of bytes)
 
 **Returns:** The value read from memory
 
@@ -39,7 +40,8 @@ Write a value to memory.
 ```javascript
 memory.write(0x10000, 42, 2);    // write 42 as 4-byte integer
 memory.write(0x10000, 3.14, 4); // write float
-memory.write(0x5000, "hello", 6); // write string
+memory.write(0x50000, "hello", 6); // write string
+memory.write(0x22000, "FA AF 00 2B", 7); // write AOB
 ```
 
 ### memory.scan()
